@@ -1,0 +1,9 @@
+<h1 class="text-5xl p-9 mt-2 text-center text-slate-700 bg-orange-200 rounded font-omono ">Lucas Alonso Blog </h1>
+<ul>
+  <% @blog_posts.each do |blog_post| %>
+    <div >
+      <h2 class="font-omono"><%= link_to blog_post.title, blog_post %></h2>
+      <%= blog_post.body %>
+    </div>
+  <% end %>
+</ul>
